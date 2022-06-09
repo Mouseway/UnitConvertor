@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/title_direction">
+
+    <fragment
+        android:id="@+id/title_direction"
+        android:name="com.example.unitconvertor.title.TitleFragment"
+        tools:layout="@layout/title_fragment"
+        android:label="title_fragment">
+        <action
+            android:id="@+id/action_title_to_convertor"
+            app:destination="@id/convertor_fragment">
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/convertor_fragment"
+        android:name="com.example.unitconvertor.convertor.ConvertorFragment"
+        tools:layout="@layout/convertor_fragment">
+
+        <argument
+            android:name="convertor"
+            app:argType="com.example.unitconvertor.convertor.convertors.Convertor" />
+    </fragment>
+</navigation>

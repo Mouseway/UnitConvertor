@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/length_btn"
+            android:layout_marginTop="100dp"
+            android:text="@string/length"
+            style="@style/title_buttons"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_lb" />
+
+        <Button
+            android:id="@+id/weight_btn"
+            android:layout_marginTop="30dp"
+            style="@style/title_buttons"
+            android:text="@string/weight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/length_btn" />
+
+        <Button
+            android:id="@+id/time_btn"
+            android:layout_marginTop="30dp"
+            android:text="@string/time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weight_btn"
+            style="@style/title_buttons" />
+
+        <TextView
+            android:id="@+id/title_lb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/unit_convertor"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/temperature_btn"
+            style="@style/title_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/temperature"
+            app:layout_constraintEnd_toEndOf="@+id/time_btn"
+            app:layout_constraintStart_toStartOf="@+id/time_btn"
+            app:layout_constraintTop_toBottomOf="@+id/time_btn" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
